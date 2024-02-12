@@ -10,6 +10,9 @@ type Configuration struct {
 	LogFileMaxBackup int    `mapstructure:"LOG_FILE_MAX_BACKUP"`
 	LogFileMaxAge    int    `mapstructure:"LOG_FILE_MAX_AGE"`
 	LogFileCompress  bool   `mapstructure:"LOG_FILE_COMPRESS"`
+	URI              string `mapstructure:"URI"`
+	TestnetURI       string `mapstructure:"TESTNET_URI"`
+	UseTestnet       bool   `mapstructure:"USE_TESTNET"`
 }
 
 var DEFAULTS = map[string]interface{}{
@@ -24,4 +27,7 @@ var DEFAULTS = map[string]interface{}{
 	"LOG_FILE_COMPRESS":   true,
 	"LOG_MAX_BACKUPS":     50,
 	"LOG_MAX_AGE":         30,
+	"URI":                 "https://api.binance.com",
+	"TESTNET_URI":         "https://testnet.binance.vision",
+	"USE_TESTNET":         false,
 }
