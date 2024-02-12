@@ -20,11 +20,16 @@ func main() {
 	}
 
 	blockNumber := big.NewInt(5532993)
+	client := driver.Instance().Client()
 	account := common.HexToAddress("0x71c7656ec7ab88b098defb751b7401b5f6d8976f")
-	balance, err := driver.Instance().Client().BalanceAt(context.Background(), account, blockNumber)
+	balance, err := client.BalanceAt(context.Background(), account, blockNumber)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	fmt.Println(balance)
+	if client != nil {
+		client.Close()
+	}
+	fmt.Println("done")
 }
