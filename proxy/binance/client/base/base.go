@@ -14,8 +14,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/AndroX7/go-eth/config"
-	"github.com/AndroX7/go-eth/proxy/common"
+	"github.com/AndroX7/crypto-wrapper/config"
+	"github.com/AndroX7/crypto-wrapper/proxy/common"
 )
 
 type doFunc func(req *http.Request) (*http.Response, error)

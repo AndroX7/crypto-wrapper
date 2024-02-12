@@ -3,7 +3,7 @@ package blockchain
 import (
 	"time"
 
-	block "github.com/AndroX7/go-eth/genesis/blockdata"
+	block "github.com/AndroX7/crypto-wrapper/genesis/blockdata"
 )
 
 type blockchain struct {

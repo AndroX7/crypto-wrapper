@@ -3,7 +3,7 @@ package driver
 import (
 	"os"
 
-	"github.com/AndroX7/go-eth/config"
+	"github.com/AndroX7/crypto-wrapper/config"
 	ethClient "github.com/ethereum/go-ethereum/ethclient"
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"

@@ -6,8 +6,8 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/AndroX7/go-eth/config"
-	"github.com/AndroX7/go-eth/driver"
+	"github.com/AndroX7/crypto-wrapper/config"
+	"github.com/AndroX7/crypto-wrapper/driver"
 	"github.com/ethereum/go-ethereum/common"
 )
 

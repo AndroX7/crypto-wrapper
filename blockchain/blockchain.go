@@ -1,7 +1,7 @@
 package blockchain
 
 import (
-	_block "github.com/AndroX7/go-eth/cryptoblock"
+	_block "github.com/AndroX7/crypto-wrapper/cryptoblock"
 )
 
 type BlockChain struct {
